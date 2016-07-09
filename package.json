@@ -1,0 +1,32 @@
+{
+  "name": "babel-plugin-blacklead-jsx",
+  "version": "0.0.1",
+  "description": "Babeljs JSX plugin for blacklead",
+  "main": "lib/index.js",
+  "repository": "https://github.com/crysalead/babel-plugin-blacklead-jsx",
+  "scripts": {
+    "pretest": "npm run lint && babel spec/suite/jsx-spec.jsx > spec/suite/jsx-spec.js",
+    "lint": "eslint lib/index.js",
+    "test": "mocha --compilers babel:babel-core/register"
+  },
+  "keywords": [
+    "babel",
+    "blacklead",
+    "jsx"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "babel-core": "^6.10.4",
+    "babel-plugin-syntax-jsx": "^6.8.0",
+    "jsx-control-statements": "^3.1.2"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.10.1",
+    "chai-kahlan": "^1.0.4",
+    "eslint": "^3.0.1",
+    "inferno": "^0.7.16",
+    "inferno-server": "^0.7.16",
+    "jasmine-kahlan": "^1.0.2",
+    "mocha": "^2.5.3"
+  }
+}

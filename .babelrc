@@ -1,0 +1,5 @@
+{
+  "plugins": ["./lib/index"],
+  "ignore": ["node_modules"],
+  "sourceMaps": true
+}
